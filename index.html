@@ -21,6 +21,11 @@
             justify-content: center;
             align-items: center;
         }
+        .poem-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .heart {
             position: relative;
             width: 100px;
@@ -28,7 +33,6 @@
             background-color: red;
             margin: 0 20px;
             transform: rotate(-45deg);
-            text-align: center;
         }
         .heart:before,
         .heart:after {
@@ -47,7 +51,8 @@
             left: 50px;
             top: 0;
         }
-        .heart p {
+        .poem {
+            margin-top: 20px;
             font-size: 1.2em;
             color: #333;
         }
@@ -59,31 +64,36 @@
             margin: 0 20px;
             text-align: center;
         }
-        .chicken img {
-            width: 100px;
-        }
         .chicken p {
+            font-size: 5em;
+        }
+        .chicken p.text {
             font-size: 1.2em;
             color: #333;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="heart"></div>
-            <p>Containers trazem escalabilidade e portabilidade,</p>
-            <p>Numa plataforma intuitiva, sem complicação,</p>
-            <p>Clientes encontram satisfação e tranquilidade,</p>
-            <p>Com tecnologia que simplifica a sua gestão.</p>
-            <br>
-            <p>E assim cresce a confiança e o afeto,</p>
-            <p>Na Locaweb, com grande união,</p>
-            <p>PaaS e Amor, esse projeto,</p>
-            <p>Promete um futuro de inovação.</p>
+        <div class="poem-container">
+            <div class="heart"></div>
+            <div class="poem">
+                <p>Containers trazem escalabilidade e portabilidade,</p>
+                <p>Numa plataforma intuitiva, sem complicação,</p>
+                <p>Clientes encontram satisfação e tranquilidade,</p>
+                <p>Com tecnologia que simplifica a sua gestão.</p>
+                <br>
+                <p>E assim cresce a confiança e o afeto,</p>
+                <p>Na Locaweb, com grande união,</p>
+                <p>PaaS e Amor, esse projeto,</p>
+                <p>Promete um futuro de inovação.</p>
+            </div>
+        </div>
         <div class="vs">Vs</div>
         <div class="chicken">
-            <img src="https://www.collinsdictionary.com/images/full/chicken_249474721.jpg" alt="Galinha">
-            <p>Eu tinha, uma galinha, que se chamava Merilu</p>
+            <p>🐔</p>
+            <p class="text">Eu tinha, uma galinha, que se chamava Merilu</p>
         </div>
     </div>
 </body>
