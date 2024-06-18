@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaaS e Amor</title>
+    <title>PaaS e Amor vs Galinha Merilu</title>
     <style>
         body {
             display: flex;
@@ -16,12 +16,17 @@
             text-align: center;
             padding: 20px;
         }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .heart {
             position: relative;
             width: 100px;
             height: 100px;
             background-color: red;
-            margin: 0 auto;
+            margin: 0 20px;
             transform: rotate(-45deg);
         }
         .heart:before,
@@ -46,10 +51,32 @@
             font-size: 1.2em;
             color: #333;
         }
+        .vs {
+            font-size: 2em;
+            margin: 0 20px;
+        }
+        .chicken {
+            margin: 0 20px;
+            text-align: center;
+        }
+        .chicken img {
+            width: 100px;
+        }
+        .chicken p {
+            font-size: 1.2em;
+            color: #333;
+        }
     </style>
 </head>
 <body>
-    <div class="heart"></div>
+    <div class="container">
+        <div class="heart"></div>
+        <div class="vs">Vs</div>
+        <div class="chicken">
+            <img src="https://via.placeholder.com/100" alt="Galinha">
+            <p>Eu tinha, uma galinha, que se chamava Merilu</p>
+        </div>
+    </div>
     <div class="poem">
         <p>Containers trazem escalabilidade e portabilidade,</p>
         <p>Numa plataforma intuitiva, sem complicação,</p>
